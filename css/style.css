@@ -8,17 +8,26 @@ html {
  --color-primary: #EB6E46;
  --color-secondary: #FFF1ED;
  --color-white: #FFF;
+ --font-stack-1: 'Archivo', sans-serif;
+ --font-stack-2: 'Inter', sans-serif;
+ --rounded-full: 9999px;
+ --cta-padding-side: 2.6rem;
+ --cta-padding-height: 1.6rem;
 }
 
+a {
+  display: inline-block;
+}
 
 body {
-  font-family: var(--font-stack);
+  font-family: var(--font-stack-1);
 }
 
 .container {
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 1.6rem;
+  isolation: isolate;
 }
 
 .grid-cols-2 {
@@ -26,22 +35,22 @@ body {
 }
 
 .bg__header {
-  background-image: var(--bg-mobile);
+  background-color: var(--color-secondary);
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 1.6rem;
-  margin-bottom: 4.5rem;
+  padding-top: 1.2rem;
+  margin-bottom: 4rem;
 }
 
 .nav__logo {
   pointer-events: none;
 }
 
-.nav--links {
+.nav__links {
   display: none;
 }
 
@@ -49,17 +58,34 @@ body {
   pointer-events: none;
 }
 
+.hero {
+  padding-bottom: 4.8rem;
+}
+
+.hero__wrapper {
+  position: relative;
+  isolation: isolate;
+  z-index: -1;
+}
+
 .hero__title {
-  color: var(--color-white);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 3.4rem;
-  line-height: 120%;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+  padding-right: 1rem;
 }
 
 .hero__sub-heading {
+  font-family: var(--font-stack-2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.6;
   color: var(--color-gray);
+  padding-right: 0.5rem;
+  margin-bottom: 2.4rem;
 }
 
 .hero__sub-heading li {
@@ -67,4 +93,27 @@ body {
   font-size: 14px;
   line-height: 180%;
   list-style-image: url(../assets/subheading-img.svg);
+}
+
+.hero__cta {
+  font-family: var(--font-stack-2);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding-inline: var(--cta-padding-side);
+  padding-block: var(--cta-padding-height);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--rounded-full);
+  margin-bottom: 5.3rem;
+}
+.hero__arrow {
+  position: absolute;
+  left: calc((var(--cta-padding-side) * 2) + 28ch);
+  bottom: calc((var(--cta-padding-height) * 2) + 2rem);
+  pointer-events: none;
+}
+
+.hero__img {
+  max-width: 100%;
 }
