@@ -53,6 +53,11 @@ body {
   transform: translateX(-50%);
 }
 
+.blur-2 {
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%);
+}
 
 .nav {
   display: flex;
@@ -60,6 +65,10 @@ body {
   align-items: center;
   padding-top: 1.2rem;
   margin-bottom: 4rem;
+}
+
+.hero__wrapper {
+  position: relative;
 }
 
 .hero__heading {
