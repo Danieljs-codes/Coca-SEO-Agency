@@ -381,3 +381,75 @@ button.hero__submit {
   color: var(--color-gray);
   margin-bottom: 3.7rem;
 }
+
+/* END of Goals Section */
+
+/* Blog Section */
+
+.blog__bg {
+  background-color: var(--color-primary);
+}
+
+.blog {
+  padding-top: 8.4rem;
+  padding-inline: 1.2rem;
+  padding-bottom: 9.6rem;
+}
+
+.blog__heading {
+  font-family: var(--font-stack-1);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--color-white);
+  margin-bottom: 2.4rem;
+  padding-right: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.blog__subheading {
+  font-family: var(--font-stack-2);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #d6d6d6;
+  margin-bottom: 3.6rem;
+}
+
+.blog-img__wrapper {
+  display: grid;
+  row-gap: 2.4rem;
+}
+
+
+.blog__img {
+  display: flex;
+  padding-bottom: 1.4rem;
+  padding-inline: 1.5rem;
+  align-items: end;
+  height: 27.9rem;
+  background-image: url(../assets/blog-img-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1.6rem;
+  
+}
+
+.blog__text-wrapper {
+  padding-inline: 1.6rem;
+  padding-block: 1.8rem;
+  filter: drop-shadow(20px 40px 80px rgba(45, 51, 81, 0.12));
+  border-radius: 12px;
+  background: var(--color-white);
+  flex: 1;
+}
+
+.blog__text-wrapper p {
+  font-family: var(--font-stack-2);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: var(--color-black);
+}
